@@ -1,0 +1,18 @@
+- Description of Approach:
+
+I started the assignment by fully reading the code and all the descriptions provided.
+I had to download and play the real version of the game to have a better understanding of the Game
+When starting to write the code, I initially completed the ckeckcollision.
+Then I made the necessary changes so that all the mobs collided would be detected
+and not just one of them. After expanding the checkcollision, I made the same changes in attack mode.
+After that, I finished processCollision, and wrote seperate helper functions to handle river and building collisions.
+
+- Challenges faced:
+
+One weird thing in the code, that i am not sure if it is for us to handle or not, is the fact that the Mobs
+will focus on one enemy and move towards them even if there is a new mob launched closer to them
+I noticed this was different than the real game but handling this bug was beyond my knowledge.
+Most important challenge i faced was related to the river. My mobs seem to be jumping over the river.
+as soon as river is detected they make a 0.5f jump which is potentially due to a bug in my math in checkRiver Function.
+Having a lot of mobs launched at the same time can cause issues, but this is not a big deal as the game
+is limited to the exiliers each player has and they cannot be launching a ton of mobs at the same time. 
